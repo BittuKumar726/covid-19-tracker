@@ -14,8 +14,8 @@ const Cards = (props) => {
 
   return (
     <div className={styles.container}>
-      <Grid container spacing={3} justify="center">
-        <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.infected)}>
+      <Grid container spacing={2} justify="center">
+        <Grid item component={Card} xs={12} md={5} className={cx(styles.card, styles.infected)}>
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
               Infected
@@ -29,7 +29,7 @@ const Cards = (props) => {
             </Typography>
           </CardContent>
         </Grid>
-        <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.recovered)}>
+        {/* <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.recovered)}>
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
               Recovered
@@ -42,8 +42,8 @@ const Cards = (props) => {
               Number of recoveries from covid-19
             </Typography>
           </CardContent>
-        </Grid>
-        <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.deaths)}>
+        </Grid> */}
+        <Grid item component={Card} xs={12} md={5} className={cx(styles.card, styles.deaths)}>
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
               Deaths
